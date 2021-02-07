@@ -1,0 +1,39 @@
+body,
+input {
+  font-family: "Scheherazade", serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #fb492d, #fa00ab);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+h2 {
+  padding-top: 50px;
+  border-top: 1px dashed #c6c6c6;
+}
+
+input[type="submit"] {
+  background: #333333;
+  display: block;
+  margin: 50px auto;
+  padding: 16px;
+  color: white;
+  border: none;
+}
+
+.direction {
+  display: inline-block;
+}
