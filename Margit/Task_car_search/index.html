@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car Search Engine</title>
+  </head>
+  <body>
+    <h2>Insert car data:</h2>
+    <form id="inputData">
+      <div>
+        <label for="license">Enter license plate number:</label>
+        <input type="number" name="license" id="license" />
+      </div>
+      <div>
+        <label for="brand">Enter Car Brand</label>
+        <input type="text" name="brand" id="brand" />
+      </div>
+      <div>
+        <label for="model">Enter Car Model</label>
+        <input type="text" name="model" id="model" />
+      </div>
+      <div>
+        <label for="price">Enter Car Price</label>
+        <input type="number" name="price" id="price" />
+      </div>
+      <div>
+        <label for="color">Choose Car Color</label>
+        <input type="text" name="color" id="color" />
+      </div>
+      <input type="submit" value="Add car" />
+      <input type="reset" />
+    </form>
+    <form id="searchData">
+      <div>
+        <label for="license">License Numver</label>
+        <input type="text" id="searchLicense" />
+      </div>
+      <input type="submit" value="Search" />
+    </form>
+    <p></p>
+    <script src="main.js"></script>
+  </body>
+</html>

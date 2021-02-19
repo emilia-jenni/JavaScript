@@ -1,0 +1,13 @@
+body {
+  background-color: beige;
+}
+
+section {
+  background-color: lightskyblue;
+  height: 109vh;
+  width: 40vw;
+}
+
+input {
+  display: block;
+}
