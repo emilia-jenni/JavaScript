@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Event countdown</h1>
+
+    <form>
+      <div>
+        <label for="eventname">Enter Event Name</label>
+        <input type="text" name="eventname" id="eventname" />
+      </div>
+      <div>
+        <label for="starting">Enter starting date</label>
+        <input type="date" name="starting" id="starting" />
+      </div>
+      <div>
+        <label for="ending">Enter Event Date</label>
+        <input type="date" name="ending" id="ending" />
+      </div>
+      <input type="submit" value="Calculate" />
+    </form>
+
+    <p id="answer"></p>
+    <p id="timer"></p>
+    <script src="main.js"></script>
+  </body>
+</html>
