@@ -24,7 +24,9 @@ const daysRemaining = (event) => {
   text.textContent = `There are ${everyDay.length} days and ${businessDays.length} workdays until ${eventname}`;
 
   form.reset();
+
   everyDay = [];
+
   businessDays = [];
 
   theTimer(endingDate, eventname);
