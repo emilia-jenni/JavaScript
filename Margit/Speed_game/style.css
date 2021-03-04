@@ -1,0 +1,91 @@
+body {
+  font-family: "Cormorant SC", serif;
+  background-image: linear-gradient(
+    to left bottom,
+    #d10a8f,
+    #f82b9c,
+    #f7437f,
+    #f75843,
+    #f77643,
+    #f79a43,
+    #f7d643
+  );
+  background-attachment: fixed;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+#score {
+  height: 25px;
+}
+
+.gamearea {
+  margin: 100px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background: #efe;
+  box-shadow: 0 0 5px 4px #221;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+.circle:active {
+  box-shadow: inset 0 0 5px #221;
+}
+
+button {
+  font-family: "Cormorant SC", serif;
+  font-size: 20px;
+  background: #f2f7dc;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px;
+}
+
+#result {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameoverbox {
+  background-color: azure;
+  padding: 100px 0 0 0;
+  width: 40%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.gameoverbox button {
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  outline: none;
+}
+
+#gameover {
+  font-size: 20px;
+  color: #221;
+}
