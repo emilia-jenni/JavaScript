@@ -16,22 +16,38 @@
     <section>
       <h1>Speed Game</h1>
       <div class="gamearea">
+        <div id="scoreboard" class="hidden">
+          <p id="score"></p>
+        </div>
         <h2 id="score"></h2>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+        <div id="buttons">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
       </div>
-      <button type="button" onclick="startGame()">Start Game</button>
-      <button typw="button" onclick="endGame()">Stop Game</button>
+      <button class="controls" id="start" onclick="startGame() + playTheme()">
+        Start Game
+      </button>
+      <button class="controls invisible" id="stop" onclick="endGame()">
+        Stop Game
+      </button>
     </section>
     <section id="result">
       <div class="gameoverbox">
         <p>Oops, Game Over</p>
         <p id="gameover"></p>
-        <button type="button" id="close">x</button>
+        <button type="button" id="close" onclick="reloadGame()">x</button>
       </div>
     </section>
     <script src="main.js"></script>
+    <audio
+      src="avengersTheme.mp3"
+      preload="auto"
+      controls="none"
+      style="display: none"
+      ;
+    ></audio>
   </body>
 </html>

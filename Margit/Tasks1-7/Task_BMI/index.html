@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <p>
+      Make a program that calculates body mass index. The BMI is defined as the
+      body mass divided by the square of the body height, and is universally
+      expressed in units of kg/m2, resulting from mass in kilograms and height
+      in metres
+    </p>
+    <form>
+      <div>
+        <label for="weight">Weight</label>
+        <input type="number" id="weight" placeholder="Enter weight in hg" />
+      </div>
+      <div>
+        <label for="height">Height</label>
+        <input type="number" id="height" placeholder="Enter height in cm" />
+      </div>
+    </form>
+    <button onclick="calcBMI()">Calculate BMI</button>
+    <p id="result"></p>
+    <script src="bmi.js"></script>
+  </body>
+</html>

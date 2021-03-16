@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Cormorant SC", serif;
   background-image: linear-gradient(
@@ -29,8 +34,8 @@ h1 {
 }
 
 .circle {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   background: #efe;
   box-shadow: 0 0 5px 4px #221;
   border-radius: 50%;
@@ -38,8 +43,10 @@ h1 {
   margin: 20px 20px;
 }
 
-.circle:active {
+.active {
   box-shadow: inset 0 0 5px #221;
+  background-color: #ffee00;
+  background-image: url("Star1.svg");
 }
 
 button {
@@ -54,7 +61,7 @@ button {
 
 #result {
   visibility: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -66,15 +73,26 @@ button {
   align-items: center;
 }
 
+.controls {
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: lavender;
+}
+
+section {
+  text-align: center;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 20vh;
+  padding-top: 2rem;
+}
+
+p {
+  display: inline;
+}
+
 .gameoverbox {
-  background-color: azure;
-  padding: 100px 0 0 0;
-  width: 40%;
-  height: 15%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  position: relative;
+  font-size: 2rem;
 }
 
 .gameoverbox button {
@@ -89,3 +107,16 @@ button {
   font-size: 20px;
   color: #221;
 }
+
+.invisible {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.clickMe {
+  pointer-events: auto;
+  cursor: pointer;
+}
+.show {
+  display: block;
