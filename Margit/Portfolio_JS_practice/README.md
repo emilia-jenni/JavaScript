@@ -1,5 +1,5 @@
-#Car Search
-Practice task to build a simple search engine for cars,
+#Portfolio JS Practice
+The aim of this was to test out different properties using JS for our school portfolio project.
 This was a school project for learning purposes.
 
 Technologies used
@@ -10,10 +10,10 @@ JS
 CSS
 
 Setup and usage
-https://public.bc.fi/s2100154/Task_car_search/
+https://public.bc.fi/s2100154/Portfolio_JS_practice/
 
 Screenshot
-![Car Search Screenshot](carsearcj.png)
+![Portfolio Practice Screenshot](portfolio practice.png)
 Sources
 
 Authors and acknowledgment

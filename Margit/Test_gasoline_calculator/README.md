@@ -10,7 +10,7 @@ JS
 CSS
 
 Setup and usage
-Live page here
+https://public.bc.fi/s2100154/Test_gasoline_calculator/
 
 Screenshot
 ![Gasoline Calc Screenshot](gasoline.png)

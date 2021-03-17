@@ -1,5 +1,3 @@
-/*3.	Make a program that asks one number from the user. Then the program finds out if the number is positive and is the number divisible by 2. Message "that is even number" is printed else "that number is odd" is printed.*/
-
 const evenOdd = () => {
   let num = Number(prompt("Enter first number"));
 

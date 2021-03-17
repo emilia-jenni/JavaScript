@@ -1,9 +1,3 @@
-/*5. Make a program that asks hourly salary and how many hours user worked on one day. With this information program calculates dayâ€™s salary.
-The salary is calculated as follows:
-- first 7 hours by hourly salary
-- next 2 hours 50% extra
-- rest of the hours 100% extra*/
-
 const countSalary = () => {
   let salaryH = Number(document.getElementById("salaryH").value);
   let hours = Number(document.getElementById("hours").value);

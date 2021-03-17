@@ -1,0 +1,115 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  width: 500px;
+  margin: 4% auto;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  background-color: lavender;
+}
+
+.calculator {
+  padding: 15px;
+  box-shadow: 0 0 5x #4e4e4e;
+  border-radius: 5px;
+}
+
+input {
+  font-size: 2.5rem;
+  border: 2px solid #e4cfcf;
+  border-radius: 5px;
+  height: 60px;
+  padding-top: 10px;
+  padding-right: 15px;
+  text-align: right;
+  margin-right: 5px;
+  overflow-x: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:hover {
+  border: 1px solid #695f5f;
+  -webkit-box-shadow: inset 0px 1px 4px 0px #5e565633;
+  box-shadow: inset 0px 1px 4px 0px #5c484833;
+}
+
+.buttons {
+}
+
+.operators {
+}
+
+.operators div {
+  display: inline-block;
+  border: 2px solid #7c6464;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  background-color: #e4cfcf;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.operators div:hover {
+  background-color: #836666;
+  -webkit-box-shadow: 0px 1px 4px 0px #866c6c33;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #021c33;
+}
+
+.operators div:active {
+  font-weight: 800;
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+.numbers div {
+  display: inline-block;
+  border: 2px solid #222121;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  background-color: beige;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.numbers div:hover {
+  background-color: #f0f7df;
+  -webkit-box-shadow: 0px 1px 4px 0px #00000033;
+  box-shadow: 0px 1px 4px 0px #00000033;
+  border-color: rgb(186, 252, 230);
+}
+
+.numbers div:active {
+  font-weight: 800;
+}
+
+div.equal {
+  display: inline-block;
+  border: 2px solid #222121;
+  border-radius: 5px;
+  width: 17%;
+  text-align: center;
+  vertical-align: top;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  color: black;
+  background-color: #4dfeef;
+  transition: all 0.2s ease-in-out;
+}
+
+div.equal:hover {
+  background-color: #7df7d2;
+  box-shadow: 0px 1px 4px 0px #aeaeae;
+  border-color: #18bb5c;
+}
+
+div.equal:active {
+  font-weight: bold;
+}
