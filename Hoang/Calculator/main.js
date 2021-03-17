@@ -6,14 +6,14 @@ document.getElementById("result").addEventListener("click", performCalculation);
 
 document.querySelectorAll(".operators > div").forEach((button) => {
   button.addEventListener("click", function () {
-    updateSelectedOperation();
+    updateSelectedOperation(this);
     updateDisplay();
   });
 });
 
 document.querySelectorAll(".numbers > div").forEach((button) => {
   button.addEventListener("click", function () {
-    updateSelectedNumber();
+    updateSelectedNumber(this);
     updateDisplay();
   });
 });
@@ -24,8 +24,8 @@ function updateDisplay() {
   ).innerText = `${firstNum} ${operation} ${secondNum}`;
 }
 
-function updateSelectedNumber() {
-  if (this.innerText === "." && firstNum.indexOf(".") > -1) {
+function updateSelectedNumber(scope) {
+  if (scope.innerText === "." && firstNum.indexOf(".") > -1) {
     return;
   }
   firstNum += this.innerText;
@@ -65,6 +65,9 @@ switch (this.innerText) {
  */
 
 function performCalculation() {
-  if (operation === "plus") return firstNum + secondNum;
-  if (operation === "minus") return firstNum - secondNum;
+  const _first = Number(firstNum);
+  const _second = Number(secondNum);
+
+  if (operation === "plus") return _first + _second;
+  if (operation === "minus") return _first - _second;
 }
