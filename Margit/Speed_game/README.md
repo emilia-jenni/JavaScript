@@ -10,7 +10,7 @@ JS
 CSS
 
 Setup and usage
-Live page here
+https://public.bc.fi/s2100154/Speed-Game_SpedenSpelit/
 
 Screenshot
 ![Speed Game Screenshot](speedgame.png)

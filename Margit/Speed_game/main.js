@@ -51,16 +51,14 @@ buttons[3].onclick = function () {
 const clicked = (i) => {
   console.log("clicked:", i);
   if (i === active) {
-    clickSound.play();
     score++;
     displayScore.textContent = `Your score is ${score}`;
     speed *= 0.8;
-    misses = 0;
+    misses = 3;
     buttons[active].classList.remove("active");
   } else {
-    endgameSound.play();
     console.log("Gameover");
-    endGame();
+    stopPlaying();
   }
 };
 
@@ -99,7 +97,7 @@ const startPlaying = () => {
   misses++;
   console.log("Misses: " + misses);
   if (misses === 3) {
-    endGame();
+    stopPlaying();
   }
 };
 
@@ -109,7 +107,7 @@ function getRandom(min, max) {
 
 const stopPlaying = () => {
   theme.stop();
-  clearTimeout(timer);
+  clearTimeout();
   console.log("Game Over!");
   overlay.style.visibility = "visible";
   if (score === 0) {
