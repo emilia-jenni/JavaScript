@@ -10,7 +10,7 @@ JS
 CSS
 
 Setup and usage
-https://public.bc.fi/s2100154/Speed-Game_SpedenSpelit/
+https://public.bc.fi/s2100154/SpeedGameSpedenSpelit/
 
 Screenshot
 ![Speed Game Screenshot](speedgame.png)
