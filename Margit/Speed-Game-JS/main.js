@@ -53,7 +53,6 @@ const clicked = (i) => {
   if (i === active) {
     score++;
     displayScore.textContent = `Your score is ${score}`;
-    speed *= 0.8;
     misses = 3;
     buttons[active].classList.remove("active");
   } else {
