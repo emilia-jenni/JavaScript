@@ -1,19 +1,69 @@
 let firstNum = "";
 let secondNum = "";
 let operation = "";
+let result = 0;
 
-document.getElementById("result").addEventListener("click", performCalculation);
+function performCalc() {
+  const _first = Number(firstNum);
+  const _second = Number(secondNum);
 
-document.querySelectorAll(".operators > div").forEach((button) => {
+  if (operation === "+") {
+    result = _first + _second;
+  } else if (operation === "-") {
+    result = _first - _second;
+  } else if (operation === "*") {
+    result = _first * _second;
+  } else if (operation === "/") {
+    result = _first / _second;
+  } else {
+    result = "oops";
+  }
+
+  document.getElementById("input").innerText = `${result}`;
+  firstNum = "";
+  secondNum = "";
+  operation = "";
+}
+
+document.getElementById("result").addEventListener("click", performCalc);
+
+document.querySelectorAll(".numbers > div").forEach((button) => {
+  updateDisplay();
   button.addEventListener("click", function () {
-    updateSelectedOperation(this);
+    if (secondNum === "" && operation != "") {
+      operation = "";
+      updateDisplay();
+    }
+    if (this.innerText === "." && firstNum.indexOf(".") > -1) {
+      return;
+    } else {
+      firstNum += this.innerText;
+    }
     updateDisplay();
   });
 });
 
-document.querySelectorAll(".numbers > div").forEach((button) => {
+document.querySelectorAll(".operators > div").forEach((button) => {
   button.addEventListener("click", function () {
-    updateSelectedNumber(this);
+    secondNum = firstNum;
+    firstNum = "";
+    switch (this.innerText) {
+      case "+":
+        operation = `+`;
+        break;
+      case "-":
+        operation = "-";
+        break;
+      case "*":
+        operation = "*";
+        break;
+      case "÷":
+        operation = "/";
+        break;
+      default:
+        console.log("error");
+        break;
+    }
     updateDisplay();
   });
 });
@@ -31,43 +81,29 @@ function updateSelectedNumber(scope) {
   firstNum += this.innerText;
 }
 
-/**
- * update the variable operation which the user choice
- * @return {void}
- */
+document.getElementById("clear").addEventListener("click", reset);
 
-function updateSelectedOperation() {
-  secondNum = firstNum;
-  firstNum = " ";
+function reset() {
+  firstNum = "";
+  secondNum = "";
+  operation = "";
+  updateDisplay();
 }
 
-switch (this.innerText) {
-  case "+":
-    operation = "plus";
-    break;
-  case "-":
-    operation = "minus";
-    break;
-  case "*":
-    operation = "multiply";
-    break;
-  case "/":
-    operation = "divide";
-    break;
-  default:
-    console.log("Error");
-    break;
-}
+document.getElementById("clear").addEventListener("click", deleteLast);
 
-/**
- * perform the actual calculation depending on user choice
- * @return {number} result of the calculation
- */
-
-function performCalculation() {
-  const _first = Number(firstNum);
-  const _second = Number(secondNum);
-
-  if (operation === "plus") return _first + _second;
-  if (operation === "minus") return _first - _second;
+function deleteLast() {
+  if (firstNum != "") {
+    firstNum = firstNum.toString().slice(0, -1);
+    updateDisplay();
+  } else if (firstNum == "" && operation != "") {
+    operation = "";
+    updateDisplay();
+  } else if (firstNum == "" && operation == "") {
+    console.log(secondNum);
+    secondNum = secondNum.toString().slice(0, -1);
+    updateDisplay();
+  } else {
+    console.log("An error occured");
+  }
 }
