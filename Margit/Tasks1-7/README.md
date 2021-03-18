@@ -1,4 +1,4 @@
-#Tasks 1-7
+# Tasks 1-7
 
 1.  Introduction to JavaScript
 2.  Three positive numbers - Make a program that asks three numbers from the user. Program prints out sum of the numbers, if any of the numbers is positive. If all the numbers are positive, also print out multiplication. If all numbers are negative, text "only negatives" is printed. Handle zero as positive in this assignment.
@@ -21,29 +21,40 @@
 
 These were school projects for learning purposes.
 
-Technologies used
+## Technologies used
+
 Built with:
 
 HTML
 JS
 CSS
 
-Setup and usage
-Lhttps://public.bc.fi/s2100154/Tasks1-7/
+## Setup and usage
 
-Screenshot
+https://public.bc.fi/s2100154/Tasks1-7/
+
+## Screenshots
+
 ![BMI Calculator Screenshot](bmi.png)
 ![Even/Odd Screenshot](evenodd.png)
 ![Military Age Screenshot](militaryage.png)
 ![Salary calculator Screenshot](salarycalc.png)
 ![Three numbers Screenshot](threenumbers.png)
 ![Task 1 Screenshot](1sttask.png)
-Sources
+
+## Sources
+
 https://source.unsplash.com/8P-uQaTd8rw/1600x900
 [Unsplash](https://source.unsplash.com/8P-uQaTd8rw/1600x900)
 
-Authors and acknowledgment
-Author: Emilia Vuorenmaa
-GitHub: @emilia_jenni
-Acknowledgement:
-Hoang Pham
+## Authors and acknowledgment
+
+### Author:
+
+Emilia Vuorenmaa
+
+### GitHub: @emilia_jenni
+
+### Acknowledgement:
+
+Margit Tennosaar
